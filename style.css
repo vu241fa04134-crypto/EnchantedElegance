@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #fff7fb;
+    color: #543047;
+}
+
+header {
+    background: linear-gradient(90deg, #8d3c70, #d77eae);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #ffe6a7;
+}
+
+.hero {
+    min-height: 430px;
+    background:
+    linear-gradient(rgba(55, 15, 45, 0.45),
+    rgba(55, 15, 45, 0.45)),
+    url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1400")
+    center/cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.hero h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.explore {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #f5c2da;
+    color: #652d50;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 55px 6%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+}
+
+.dress-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.dress-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #d8a9c5;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.dress-card:hover {
+    transform: translateY(-8px);
+}
+
+.dress-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.dress-info {
+    padding: 20px;
+}
+
+.dress-info h3 {
+    color: #a33d78;
+    margin-bottom: 12px;
+}
+
+.dress-info p {
+    margin: 8px 0;
+}
+
+.dress-info button {
+    margin-top: 12px;
+    margin-right: 5px;
+    padding: 10px 13px;
+    background: #a64d82;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.dress-info button:hover {
+    background: #6f2856;
+}
+
+#booking {
+    background: #f7ddea;
+}
+
+form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select {
+    padding: 14px;
+    border: 1px solid #d28db4;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 15px;
+    background: #963c73;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#bookingMessage {
+    margin-top: 20px;
+}
+
+footer {
+    background: #542047;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+@media(max-width:600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        margin: 6px;
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+}
